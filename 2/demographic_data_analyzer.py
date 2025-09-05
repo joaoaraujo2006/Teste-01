@@ -32,8 +32,8 @@ def calculate_demographic_data(print_data=True):
     #paises = limitado['native-country'].value_counts(normalize=True)
     
     limitado = dados[dados['salary'] == '>50K']
-    ricos_por_pais = limitado['native-country'].value_counts()
-    pessoas_por_pais = dados['native-country'].value_counts()
+    ricos_por_pais = limitado['native-country'].valuevalue_counts_counts()
+    pessoas_por_pais = dados['native-country'].()
     paises = ricos_por_pais / pessoas_por_pais
     highest_earning_country = paises.idxmax()
     highest_earning_country_percentage = round(paises.max() * 100, 1)
